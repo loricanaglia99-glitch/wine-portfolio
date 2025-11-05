@@ -54,7 +54,7 @@ async function sendEmailWithResend({ name, email, message }: { name: string; ema
   const resend = new Resend(process.env.RESEND_API_KEY);
 
   await resend.emails.send({
-    from: 'Lorenzo Portfolio <onboarding@resend.dev>',
+    from: 'Lorenzo Canaglia <contact@lorenzocanaglia.com>',
     to: process.env.CONTACT_EMAIL || 'loricanaglia99@gmail.com',
     subject: `New Contact: ${name}`,
     html: `
