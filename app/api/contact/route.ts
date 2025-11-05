@@ -32,7 +32,8 @@ export async function POST(request: NextRequest) {
     });
 
     // Send email with Resend
-    await sendEmailWithResend({ name, email, message });
+    const emailResult = await sendEmailWithResend({ name, email, message });
+    console.log("Email send result:", emailResult);
 
     return NextResponse.json(
       {
@@ -53,7 +54,13 @@ export async function POST(request: NextRequest) {
 async function sendEmailWithResend({ name, email, message }: { name: string; email: string; message: string }) {
   const resend = new Resend(process.env.RESEND_API_KEY);
 
-  await resend.emails.send({
+  console.log("Attempting to send email with config:", {
+    from: 'Lorenzo Canaglia <contact@lorenzocanaglia.com>',
+    to: process.env.CONTACT_EMAIL || 'loricanaglia99@gmail.com',
+    hasApiKey: !!process.env.RESEND_API_KEY,
+  });
+
+  const result = await resend.emails.send({
     from: 'Lorenzo Canaglia <contact@lorenzocanaglia.com>',
     to: process.env.CONTACT_EMAIL || 'loricanaglia99@gmail.com',
     subject: `New Contact: ${name}`,
@@ -77,4 +84,7 @@ async function sendEmailWithResend({ name, email, message }: { name: string; ema
     `,
     replyTo: email,
   });
+
+  console.log("Resend API response:", result);
+  return result;
 }
