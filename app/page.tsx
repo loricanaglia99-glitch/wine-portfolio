@@ -100,6 +100,91 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Wine Sourcing Section - For Buyers */}
+      <section className="py-20 bg-gradient-to-br from-wine to-burgundy-900">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 font-serif">
+              Need Help Sourcing Wine?
+            </h2>
+            <p className="text-xl md:text-2xl text-burgundy-100 mb-4">
+              Looking for trusted partners in Italy & France?
+            </p>
+            <p className="text-lg text-burgundy-50 max-w-3xl mx-auto leading-relaxed">
+              I connect professional buyers with certified wineries offering competitive, high-quality wines — ready for your market.
+            </p>
+          </div>
+
+          {/* Services Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+              <div className="flex items-start gap-3">
+                <svg className="w-6 h-6 text-burgundy-100 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+                <div>
+                  <h3 className="text-white font-semibold mb-1">Tailored Wine Portfolios</h3>
+                  <p className="text-burgundy-100 text-sm">Curated selections matching your market needs</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+              <div className="flex items-start gap-3">
+                <svg className="w-6 h-6 text-burgundy-100 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+                <div>
+                  <h3 className="text-white font-semibold mb-1">Private Label Development</h3>
+                  <p className="text-burgundy-100 text-sm">Custom wine programs for your brand</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+              <div className="flex items-start gap-3">
+                <svg className="w-6 h-6 text-burgundy-100 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+                <div>
+                  <h3 className="text-white font-semibold mb-1">End-to-End Support</h3>
+                  <p className="text-burgundy-100 text-sm">From selection to shipment guidance</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <a
+              href="#contact"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white text-wine px-8 py-4 rounded-lg font-semibold text-lg hover:bg-burgundy-50 transition-all duration-200 shadow-xl hover:shadow-2xl hover:scale-105"
+            >
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+              Request Wine Portfolio
+            </a>
+            <a
+              href="#contact"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-burgundy-800 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-burgundy-700 transition-all duration-200 shadow-xl hover:shadow-2xl hover:scale-105 border-2 border-white/30"
+            >
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+              Book a Consultation
+            </a>
+          </div>
+
+          {/* Contact CTA */}
+          <div className="mt-8 text-center">
+            <p className="text-burgundy-100 text-sm">
+              📬 Contact me to explore current opportunities
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Contact Section */}
       <section id="contact" className="py-20 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
