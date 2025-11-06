@@ -101,76 +101,115 @@ export default function Home() {
       </section>
 
       {/* Wine Sourcing Section - For Buyers */}
-      <section className="py-20 bg-gradient-to-br from-wine to-burgundy-900">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 font-serif">
-              Need Help Sourcing Wine?
+      <section className="py-20 bg-gradient-to-br from-wine via-burgundy-800 to-burgundy-900 relative overflow-hidden">
+        {/* Decorative Elements */}
+        <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-burgundy-950/50 rounded-full blur-3xl"></div>
+
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          {/* Main Headline */}
+          <div className="text-center mb-16">
+            <div className="inline-block mb-4">
+              <span className="bg-white/20 text-white px-4 py-2 rounded-full text-sm font-semibold tracking-wide backdrop-blur-sm">
+                FOR PROFESSIONAL BUYERS
+              </span>
+            </div>
+            <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 font-serif leading-tight">
+              Source Premium Italian & French Wines
             </h2>
-            <p className="text-xl md:text-2xl text-burgundy-100 mb-4">
-              Looking for trusted partners in Italy & France?
-            </p>
-            <p className="text-lg text-burgundy-50 max-w-3xl mx-auto leading-relaxed">
-              I connect professional buyers with certified wineries offering competitive, high-quality wines — ready for your market.
+            <p className="text-xl md:text-2xl text-burgundy-50 max-w-3xl mx-auto leading-relaxed font-light">
+              Direct access to certified wineries offering competitive pricing and exceptional quality wines, perfectly suited for your market.
             </p>
           </div>
 
-          {/* Services Grid */}
+          {/* Services Grid - Reordered for conversion */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
-              <div className="flex items-start gap-3">
-                <svg className="w-6 h-6 text-burgundy-100 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                </svg>
+            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-7 border border-white/30 hover:bg-white/15 transition-all duration-300 hover:scale-105">
+              <div className="flex flex-col items-center text-center gap-4">
+                <div className="w-14 h-14 bg-white/20 rounded-full flex items-center justify-center">
+                  <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  </svg>
+                </div>
                 <div>
-                  <h3 className="text-white font-semibold mb-1">Tailored Wine Portfolios</h3>
-                  <p className="text-burgundy-100 text-sm">Curated selections matching your market needs</p>
+                  <h3 className="text-white font-bold text-lg mb-2">Curated Wine Portfolios</h3>
+                  <p className="text-burgundy-100 text-sm leading-relaxed">Handpicked selections tailored to your target market and customer preferences</p>
                 </div>
               </div>
             </div>
 
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
-              <div className="flex items-start gap-3">
-                <svg className="w-6 h-6 text-burgundy-100 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                </svg>
+            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-7 border border-white/30 hover:bg-white/15 transition-all duration-300 hover:scale-105">
+              <div className="flex flex-col items-center text-center gap-4">
+                <div className="w-14 h-14 bg-white/20 rounded-full flex items-center justify-center">
+                  <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
                 <div>
-                  <h3 className="text-white font-semibold mb-1">Private Label Development</h3>
-                  <p className="text-burgundy-100 text-sm">Custom wine programs for your brand</p>
+                  <h3 className="text-white font-bold text-lg mb-2">Competitive Pricing</h3>
+                  <p className="text-burgundy-100 text-sm leading-relaxed">Direct winery relationships ensuring the best margins for your business</p>
                 </div>
               </div>
             </div>
 
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
-              <div className="flex items-start gap-3">
-                <svg className="w-6 h-6 text-burgundy-100 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                </svg>
+            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-7 border border-white/30 hover:bg-white/15 transition-all duration-300 hover:scale-105">
+              <div className="flex flex-col items-center text-center gap-4">
+                <div className="w-14 h-14 bg-white/20 rounded-full flex items-center justify-center">
+                  <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
                 <div>
-                  <h3 className="text-white font-semibold mb-1">End-to-End Support</h3>
-                  <p className="text-burgundy-100 text-sm">From selection to shipment guidance</p>
+                  <h3 className="text-white font-bold text-lg mb-2">Full-Service Support</h3>
+                  <p className="text-burgundy-100 text-sm leading-relaxed">From sourcing to logistics, we handle everything for a seamless experience</p>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* CTA Button */}
-          <div className="flex justify-center">
+          {/* Value Props */}
+          <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 mb-10 border border-white/20">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="flex items-start gap-3">
+                <svg className="w-6 h-6 text-burgundy-200 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
+                </svg>
+                <p className="text-white font-medium">Private label development for your brand</p>
+              </div>
+              <div className="flex items-start gap-3">
+                <svg className="w-6 h-6 text-burgundy-200 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
+                </svg>
+                <p className="text-white font-medium">Organic & sustainable wine options available</p>
+              </div>
+              <div className="flex items-start gap-3">
+                <svg className="w-6 h-6 text-burgundy-200 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
+                </svg>
+                <p className="text-white font-medium">Certified wineries with proven quality standards</p>
+              </div>
+              <div className="flex items-start gap-3">
+                <svg className="w-6 h-6 text-burgundy-200 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
+                </svg>
+                <p className="text-white font-medium">Export documentation & logistics assistance</p>
+              </div>
+            </div>
+          </div>
+
+          {/* CTA Section */}
+          <div className="text-center">
             <a
               href="#contact"
-              className="inline-flex items-center justify-center gap-3 bg-white text-wine px-12 py-5 rounded-lg font-bold text-xl hover:bg-burgundy-50 transition-all duration-200 shadow-2xl hover:shadow-3xl hover:scale-105"
+              className="inline-flex items-center justify-center gap-3 bg-white text-wine px-14 py-6 rounded-xl font-bold text-xl hover:bg-burgundy-50 transition-all duration-300 shadow-2xl hover:shadow-3xl hover:scale-105 group"
             >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              <span>Request Your Custom Portfolio</span>
+              <svg className="w-6 h-6 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
-              Get In Touch
             </a>
-          </div>
-
-          {/* Contact CTA */}
-          <div className="mt-8 text-center">
-            <p className="text-burgundy-100 text-sm">
-              📬 Contact me to explore current opportunities
+            <p className="mt-6 text-burgundy-100 text-base">
+              Connect with trusted wine producers today — No commitment required
             </p>
           </div>
         </div>
